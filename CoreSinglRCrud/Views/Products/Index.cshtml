@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CoreSignalRCrud.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Unit Price</th>
+            <th>Stock Qnty.</th>
+        </tr>
+    </thead>
+    <tbody id="tblProduct">  </tbody>
+</table> 
